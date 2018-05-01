@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Stat Helper</title>
+    </head>
+    <body>
+        <h1>Stat Helper by Jacob Bashista</h1>
+
+        <div id="datainput">
+            <h3>Dataset: (line delimited)</h3>
+            <textarea class="form-control" rows="5" id="datapoints"></textarea>
+            <h3>Classes: (number)</h3>
+            <input type="text" class="form-control" id="classcount">
+            <br>
+            <button type="button" id="calculate" class="center-block btn btn-success">Calculate</button>
+        </div>
+        <div id="dataoutput">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><h4>Min:</h4></th>
+                        <td><h4 id="minvalue"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Max:</h4></th>
+                        <td><h4 id="maxvalue"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Range:</h4></th>
+                        <td><h4 id="rangevalue"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Interval:</h4></th>
+                        <td><h4 id="intervalvalue"></h4></h4></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"><h4>Class:</h4></th>
+                        <th scope="col"><h4>Frequency:</h4></th>
+                    </tr>
+                </thead>
+                <tbody id="freqTableData">
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

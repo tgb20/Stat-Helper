@@ -1,0 +1,22 @@
+body {
+    background-color: #4183D7;
+}
+h1, h3 {
+    color: white;
+    text-align: center;
+}
+h4, h5 {
+    color: white;
+}
+#datainput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#dataoutput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
